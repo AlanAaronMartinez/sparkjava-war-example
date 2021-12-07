@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent 'alan'
     stages {
         stage('primeros pasos') {
             steps {
