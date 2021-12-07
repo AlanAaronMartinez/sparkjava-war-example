@@ -9,6 +9,18 @@ pipeline {
                 pwd
                 '''
             }
+            stage('Build') {
+            steps {
+                sh '''
+                echo "BUILD"
+                '''
+            }
+                stage('Deploy') {
+            steps {
+                sh '''
+                echo "Deploy"
+                '''
+            }
         }
     }
 }
