@@ -9,15 +9,17 @@ pipeline {
                 pwd
                 '''
             }
-            stage('Build') {
+        }
+        stage('Build') {
             steps {
                 sh '''
                 echo "BUILD"
                 '''
             }
-                stage('Deploy') {
+        }
+        stage('Deploy') {
             steps {
-                sh '''
+               sh '''
                 echo "Deploy"
                 '''
             }
