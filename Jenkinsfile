@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                echo "BUILD"
+                mvn clean install
                 '''
             }
         }
