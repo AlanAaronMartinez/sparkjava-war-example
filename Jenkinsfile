@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                sh '''
-                echo "Deploy"
+                docker cp "/root/workspace/Pipeline_AlanMartinez/target/sparkjava-hello-world-1.0.war" serene_montalcini:"/usr/local/tomcat/webapps"
                 '''
             }
         }
