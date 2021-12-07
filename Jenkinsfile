@@ -1,5 +1,5 @@
 pipeline {
-    agent 'AlanMartinez'
+    agent {node {label 'AlanMartinez'}}
     stages {
         stage('primeros pasos') {
             steps {
