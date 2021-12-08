@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                sh '''
-                docker cp "/root/workspace/Pipeline_AlanMartinez/target/sparkjava-hello-world-1.0.war" tomcat:"/usr/local/tomcat/webapps"
+                docker cp "/root/workspace/Alan_Folder/Alan_Pipeline/target/sparkjava-hello-world-1.0.war" fervent_black:"/usr/local/tomcat/webapps"
                 '''
             }
         }
