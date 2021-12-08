@@ -4,7 +4,7 @@ pipeline {
         stage('primeros pasos') {
             steps {
                 sh '''
-                echo "hola"
+                echo "hola $param"
                 ls
                 pwd
                 '''
